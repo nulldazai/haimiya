@@ -1,0 +1,10 @@
+services:
+  haimiya:
+    build: .
+    image: haimiya
+
+    container_name: haimiya
+    restart: unless-stopped
+
+    volumes:
+      - ./.sockets:/var/run
